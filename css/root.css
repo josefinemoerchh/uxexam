@@ -1,0 +1,24 @@
+/* CSS root doc with everything global*/
+
+/*colors to be used everywhere*/
+:root {
+    --primary-color: darkgrey;
+    --secondary-color: turquoise;
+    --highlight-color: azure;
+    }
+
+.invisible {
+    display: none;
+}
+
+header {
+    background: var(--secondary-color);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+button {
+    border: 2px solid var(--highlight-color);
+    background: none;
+}
