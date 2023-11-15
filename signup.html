@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/root.css">
+    <script defer src="js/validation.js"></script>
 </head>
 <body>
     <header>
         <h2 class="logo">LOGO</h2>
         <nav class="navigation">
-            <a href="/storefront.html">Home</a>
+            <a href="/index.html">Home</a>
             <a href="#">Shop</a>
             <a href="#">About</a>
             <button type="button">Log in</button>
@@ -19,7 +20,21 @@
         </nav>
     </header>
     <main>
-
+        <section>
+                <h2>Sign up</h2>
+                <div id="error"></div>
+                    <form action="/index.html" id="form">
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password">
+                        </div>
+                        <button type="submit">Sign up</button>
+                    </form>
+        </section>
     </main>
     <footer>
         
