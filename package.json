@@ -1,11 +1,14 @@
 {
   "name": "uxexam",
   "version": "1.0.0",
-  "description": "fake db",
+  "description": "ux-exam-test-rest-api",
   "main": "index.js",
   "scripts": {
     "json:server": "json-server --watch db.json"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
 }
