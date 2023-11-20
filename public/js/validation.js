@@ -3,7 +3,7 @@ const password = document.getElementById('password');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 
-// Function to check if the form is valid
+// Validation function
 function isFormValid() {
     let messages = [];
 
@@ -46,14 +46,14 @@ function isFormValid() {
     // Form is valid
     return true;
 }
-// Function to submit form data
+
 function submitFormData() {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
 
     console.log(data);
 
-    // Uncomment the following lines to send a POST request to the JSON server
+    // fetch data
     fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: {
@@ -62,17 +62,19 @@ function submitFormData() {
         body: JSON.stringify({
             user_email: email.value,
             user_password: password.value,
-            // Add other form fields as needed
         }),
     })
     .then(response => response.json()) // Assuming the server returns JSON
     .then(data => {
         console.log('Success:', data);
-        // Handle the success response as needed
+        
+        // pop-up to inform user that they successfully signed up, + redirect
+        window.alert('Signup successful!');
+        console.log("successful login");
+        window.location.href = '/pages/index.html';
     })
     .catch(error => {
         console.error('Error:', error);
-        // Handle the error as needed
     });
 }
 // Event listener for form submission
