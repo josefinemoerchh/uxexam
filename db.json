@@ -29,6 +29,16 @@
       "user_email": "hejj@gmail.com",
       "user_password": "123456AASD!",
       "id": "zWK1hgR"
+    },
+    {
+      "user_email": "anothertestemail@email.com",
+      "user_password": "123435SDAas!",
+      "id": "0mcNuKB"
+    },
+    {
+      "user_email": "testtesttesttest@email.com",
+      "user_password": "123324JHASBDas!",
+      "id": "AsF72dG"
     }
   ]
 }
