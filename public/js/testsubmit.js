@@ -1,5 +1,7 @@
-const email = document.getElementById('email');
-const password = document.getElementById('password');
+// HERE STARTS THE SIGNUP FUNCTIONALITY
+const email = document.getElementById('signup-box').querySelector('input');
+const password = document.getElementById('signup-password').querySelector('input');
+const repeatPassword = document.getElementById('signup-repeat-password').querySelector('input');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 
@@ -30,6 +32,12 @@ function isFormValid() {
 
     if (!/[!@#$%^&*(),.?":{}|<>]/.test(password.value)) {
         messages.push("Your password must contain at least one special character.");
+    }
+
+    const repeatPasswordValue = repeatPassword.value;  // Get the value of the repeatPassword input
+
+    if (password.value !== repeatPasswordValue) {
+        messages.push("The passwords must match");
     }
 
     if (messages.length > 0) {
@@ -71,12 +79,13 @@ function submitFormData() {
         // pop-up to inform user that they successfully signed up, + redirect
         window.alert('Signup successful!');
         console.log("successful login");
-        window.location.href = '/pages/index.html';
+        window.location.href = '/index.html';
     })
     .catch(error => {
         console.error('Error:', error);
     });
 }
+
 // Event listener for form submission
 form.addEventListener('submit', (e) => {
     if (!isFormValid()) {
