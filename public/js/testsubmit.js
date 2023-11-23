@@ -9,6 +9,18 @@ const errorElement = document.getElementById('error');
 function isFormValid() {
     let messages = [];
 
+    // Clear error messages if user clicks the Login or Signup button
+    function clearErrorMessages() {
+    errorElement.innerText = '';
+    }
+
+    const loginBtn = document.getElementById('loginBtn');
+    loginBtn.addEventListener('click', clearErrorMessages);
+
+    const signupBtn = document.getElementById('signupBtn');
+    signupBtn.addEventListener('click', clearErrorMessages);
+
+    // Validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email.value)) {
         messages.push('Please enter a valid email address');

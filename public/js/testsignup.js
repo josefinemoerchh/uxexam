@@ -1,4 +1,4 @@
-// Get references to elements
+// establish all elements
 const loginText = document.getElementById('login-text');
 const signupText = document.getElementById('signup-text');
 const loginBox = document.getElementById('login-box');
@@ -8,7 +8,9 @@ const signupPassword = document.getElementById('signup-password');
 const signupRepeatPassword = document.getElementById('signup-repeat-password');
 const loginBtn = document.getElementById('loginBtn');
 const signupBtn = document.getElementById('signupBtn');
-const signupForm = document.getElementById('form'); // Assuming your signup form has the ID 'form'
+const signupForm = document.getElementById('form');
+const signupSubmitBtn = document.getElementById('signup-button-submit');
+const loginSubmitBtn = document.getElementById('login-button');
 
 // Function to toggle to the signup form
 function toggleToSignupForm() {
@@ -17,11 +19,13 @@ function toggleToSignupForm() {
     signupBox.classList.remove('invisible');
     signupPassword.classList.remove('invisible');
     signupRepeatPassword.classList.remove('invisible');
+    signupSubmitBtn.classList.remove('invisible');
 
     // Hide login form elements
     loginText.classList.add('invisible');
     loginBox.classList.add('invisible');
     loginPassword.classList.add('invisible');
+    loginSubmitBtn.classList.add('invisible');
 }
 
 // Function to toggle to the login form
@@ -30,12 +34,14 @@ function toggleToLoginForm() {
     loginText.classList.remove('invisible');
     loginBox.classList.remove('invisible');
     loginPassword.classList.remove('invisible');
+    loginSubmitBtn.classList.remove('invisible');
 
     // Hide signup form elements
     signupText.classList.add('invisible');
     signupBox.classList.add('invisible');
     signupPassword.classList.add('invisible');
     signupRepeatPassword.classList.add('invisible');
+    signupSubmitBtn.classList.add('invisible');
 }
 
 // Event listener for signup button
