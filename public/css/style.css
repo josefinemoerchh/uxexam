@@ -1,0 +1,358 @@
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+/* nav */
+
+header {
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--offwhite-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--offwhite-color);
+    color: var(--primary-color);
+}
+
+nav .logo {
+    font-size: 20px;
+}
+
+.second-layer {
+    background-color: var(--primary-color);
+    color: var(--offwhite-color);
+    text-align: center;
+    padding: 10px;
+}
+
+.second-layer a {
+    background-color: var(--primary-color);
+    color: var(--offwhite-color);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.second-layer a:hover {
+    background-color: var(--offwhite-color);
+    color: var(--primary-color);
+}
+
+.btn_extra {
+    margin-right: 0;
+}
+
+.margin {
+    margin-top: 7%;
+}
+
+/* box area */
+
+.boxes-container {
+    margin: 4%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12%;
+    margin-bottom: 12%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+    padding: 20px;
+    height: 80%;
+    text-align: center;
+    border-radius: 1%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradientfour);
+    z-index: 1;
+    margin-right: 0;
+}
+
+#fashion {
+    background-image: url('../pictures/1_GXnocO-dGPHaw1LOdFMDSQ_png.webp');
+}
+
+#jewelry {
+    background-image: url('../pictures/images_22.jpeg');
+}
+
+#tech {
+    background-image: url('../pictures/headphones.jpeg');
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box h2 {
+    font-size: 24px;
+    margin: 0;
+    z-index: 2;
+}
+
+/* section */
+
+.showcase {
+    background-color: var(--offwhite-color);
+    padding: 20px;
+}
+
+.showcase h3 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#allproducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin: 5%;
+}
+
+#alljeweleryproducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.product a {
+    text-decoration: none;
+    color: var(--offwhite-color);
+}
+
+.product {
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s; 
+    cursor: pointer;
+}
+
+.product:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    margin: 0;
+    padding: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 120%;
+    color: var(--primary-color);
+}
+
+.price {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* frontpage section */
+
+.frontpage {
+    background: linear-gradient(var(--gradientone), var(--gradienttwo)), url('../pictures/frontpage_img.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: var(--offwhite-color);
+    text-align: center;
+}
+
+.content {
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 0;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.content h1 {
+    margin-left: 20%;
+}
+
+/* banner Section */
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--gradientone), var(--gradienttwo)), url('../pictures/campaign_img_2.jpeg') no-repeat center center / cover;
+    background-size: cover;
+    background-position: center;
+    color: var(--offwhite-color);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradientthree);
+    z-index: 1;
+}
+
+.banner-text {
+    z-index: 2;
+}
+
+.banner-text h1 {
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin: 10px 0;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.header2wrapper {
+    margin-top: 13%;
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .banner {
+        height: 50vh;
+    }
+    
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav a {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .frontpage {
+        height: 85vh;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .boxes-container {
+    margin: 7%;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    gap: 3%;
+    margin-bottom: 20%;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header2wrapper {
+        margin-top: 0;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .box {
+        height: 180%;
+    }
+
+    .showcase {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .margin {
+        margin-top: 0;
+        margin-bottom: 11%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .banner {
+        height: 55vh;
+    }
+
+    .boxes-container {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    gap: 5%;
+    margin-bottom: 11.5%;
+    }
+
+    .header2wrapper {
+        margin-top: 7%;
+    }
+
+}
