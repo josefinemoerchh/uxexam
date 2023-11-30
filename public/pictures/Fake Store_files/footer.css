@@ -1,0 +1,38 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .social-icons img {
+        width: 25px;
+    }
+}

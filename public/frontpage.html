@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Fake Store</title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div id="menu-toggle">&#9776; Menu</div>
+            <a href="#" id="logo">Fake Store</a>
+            <a href="/cart.html" id="cart">&#128722; Cart</a>
+        </div>
+        
+        <div class="side-menu">
+            <a href="#" class="close-btn" onclick="closeSideMenu()">&times;</a>
+            <a href="productfilterpage.html?category=electronics" id="electronics-link">Electronics</a>
+            <a href="productfilterpage.html?category=women%27s%20clothing" id="women-link">Women's clothing</a>
+            <a href="productfilterpage.html?category=men%27s%20clothing" id="men-link">Men's clothing</a>
+            <a href="productfilterpage.html?category=jewelery" id="jewelry-link">Jewelry</a>
+        </div>
+    </header>
+
+    <div class="frontpage">
+        <div class="content">
+            <h1>Everything everywhere all at once</h1>
+            <p>View all items in the store</p>
+            <a href="/productfilterpage.html" class="btn btn_extra">Shop</a>
+        </div>
+    </div>
+    <section>
+        <div class="header2wrapper">
+        <h2>Shop by category</h2>
+        </div>
+    <div class="boxes-container">
+        <a href="productfilterpage.html?category=men%27s%20clothing" class="box" id="fashion">
+            <h3>Men's fashion</h3>
+        </a>
+        <a href="productfilterpage.html?category=jewelery" class="box" id="jewelry">
+            <h3>Jewelry</h3>
+        </a>
+        <a href="productfilterpage.html?category=electronics" class="box" id="tech">
+            <h3>Tech</h3>
+        </a>
+    </div>
+    </section>
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Jean Pierre Collection</h1>
+            <p>Peak into the mind of the world's greatest minds</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </div>
+
+    <div class="showcase">
+        <h2 class="margin">Our top sellers</h2>
+        <div id="allproducts">
+            <!-- Display products here -->
+        </div>
+    </div>
+
+    <div class="showcase">
+        <div id="alljeweleryproducts">
+            <!-- Display products here -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" aria-label="Instagram"><img src="img/Instagram-logo.png" alt="Instagram Logo"></a>
+            <a href="#" aria-label="Facebook"><img src="img/facebook-logo.png" alt="Facebook Logo"></a>
+            <a href="#" aria-label="Fake Store API"><img src="img/github-logo.png" alt="Fake Store API Logo"></a>
+        </div>
+        <p>&copy; 2023 Fake Store All rights reserved.</p>
+    </footer>
+
+<script src="js/products.js"></script>
+<script src="js/nav-button.js"></script>
+<script src="js/header.js"></script>
+</body>
+</html>
